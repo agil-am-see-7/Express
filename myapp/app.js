@@ -19,12 +19,12 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
-app.use(cors(
+/*/app.use(cors(
   {
   origin: 'http://localhost:4200'
   //origin: 'https://swl1easychat.herokuapp.com'
   }
-));//added
+));//added /*/
  
 app.use('/', indexRouter);
 app.use('/api', usersRouter);

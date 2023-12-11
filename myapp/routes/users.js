@@ -14,7 +14,7 @@ router.get('/', function (req, res, next) {
  
 // history
 router.get('/history', function (req, res, next) {
-  res.json(chatHistory);
+  res.json({chatHistory});
 });
  
 router.post('/history', function (req, res, next) {
